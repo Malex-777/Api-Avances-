@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunbot Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+             <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Logo Sunbot" class="chat-logo">
+            <div class="chat-title">Sunbot</div>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="bubble bot">¡Hola! Soy Sunbot, tu asistente virtual. ¿En qué puedo ayudarte hoy?</div>
+        </div>
+        <form id="chatForm" autocomplete="off" class="chat-input-container">
+            <input type="text" class="chat-input" id="mensajeInput" name="message" placeholder="Enviar mensaje..." required autofocus>
+            <button class="chat-button" type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

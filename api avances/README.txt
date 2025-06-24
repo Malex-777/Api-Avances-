@@ -18,7 +18,7 @@ Este proyecto es una API web construida con Flask que utiliza la API de OpenRout
 
 1. **Clona el repositorio:**
    ```bash
-   git clone 
+   git clone https://github.com/Malex-777/Api-Avances-.git 
    cd tu-repo
    ```
 
